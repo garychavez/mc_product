@@ -1,4 +1,4 @@
-package com.galu.product;
+package com.galu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
