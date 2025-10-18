@@ -48,6 +48,13 @@
             <version>1.0.2</version>
         </dependency>
 
+<!--        DEPENDENCIA PARA LOMBOK-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
+
 	</dependencies>
 
 	<build>
