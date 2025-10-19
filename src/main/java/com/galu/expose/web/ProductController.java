@@ -17,16 +17,16 @@ public class ProductController {
 
     @PostMapping
     public Completable save(@RequestBody ProductRequest request){
-        return null;
+        return productService.save(request);
     }
 
     @GetMapping
     public Maybe<ProductResponse> getById(@PathVariable("idProduct") Long idProduct){
-        return null;
+       return productService.getById(idProduct);
     }
 
     @GetMapping
     public Observable<ProductResponse> getData(){
-        return null;
+        return productService.getData();
     }
 }

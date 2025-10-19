@@ -9,7 +9,8 @@ import org.apache.coyote.BadRequestException;
 import org.springframework.web.bind.annotation.PathVariable;
 
 public interface ProductService {
-    Completable save(ProductRequest request);
-    Maybe<ProductResponse> getById(Long idProduct) throws BadRequestException;
+    Maybe<ProductResponse> getById(Long idProduct);
     Observable<ProductResponse> getData();
+
+    Completable save(ProductRequest request);
 }

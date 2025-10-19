@@ -29,8 +29,7 @@ public class ProductServiceImplement implements ProductService {
     public Maybe<ProductResponse> getById(Long idProduct) {
         return Maybe.just(
                 repository.searchById(idProduct))
-                .map(mapper::toResponse)
-                .switchIfEmpty(Maybe.empty());
+                .map(mapper::toResponse);
     }
 
     @Override
