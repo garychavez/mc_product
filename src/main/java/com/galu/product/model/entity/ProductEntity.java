@@ -1,5 +1,7 @@
 package com.galu.product.model.entity;
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GenerationType;
@@ -9,6 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table( name  =  "product" )
+@Data
 public class ProductEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
