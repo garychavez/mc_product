@@ -7,5 +7,6 @@ public class ProductResponse {
 
     private Long idProduct;
     private String name;
-    private String description;
+//    private String material;
+//    private String description;
 }

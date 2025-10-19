@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@RequestMapping("/person")
 public class ProductController {
     @Autowired
     ProductService productService;

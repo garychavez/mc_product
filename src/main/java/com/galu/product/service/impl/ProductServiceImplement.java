@@ -9,10 +9,14 @@ import io.reactivex.Completable;
 import io.reactivex.Maybe;
 import io.reactivex.Observable;
 import io.reactivex.Single;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Service
+@AllArgsConstructor
+//@Repository
 public class ProductServiceImplement implements ProductService {
     @Autowired
     ProductRepository repository;
